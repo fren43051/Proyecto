@@ -1,6 +1,6 @@
 <?php /** @noinspection ALL */
 
-requiere_once ('../../Conexion.php');
+require_once ('../../Conexion.php');
 
 class Materias extends Conexion{
     public function __construct(){
@@ -31,7 +31,7 @@ class Materias extends Conexion{
 
     public function getById($Id){
         $rows = null;
-        $statement = $this->db->prepare("SELECT * FROM materias WHERE ID = :Id");
+        $statement = $this->db->prepare("SELECT * FROM materias WHERE ID_MATERIA = :Id");
         $statement->bindParam(':Id', $Id);
         $statement->execute();
         while($result = $statement->fetch()){

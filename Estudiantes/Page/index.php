@@ -38,7 +38,7 @@ $Modelo = new Estudiantes();
 
         ?>
         <tr>
-            <td><?php echo $Estudiante['ID_Estudiante']; ?></td>
+            <td><?php echo $Estudiante['ID_ESTUDIANTE']; ?></td>
             <td><?php echo $Estudiante['NOMBRE']; ?></td>
             <td><?php echo $Estudiante['APELLIDO']; ?></td>
             <td><?php echo $Estudiante['DOCUMENTO']; ?></td>
@@ -48,8 +48,8 @@ $Modelo = new Estudiantes();
             <td><?php echo $Estudiante['PROMEDIO']; ?></td>
             <td><?php echo $Estudiante['FECHA_REGISTRO']; ?></td>
             <td>
-                <a href="actualizar.php" target="_blank">Actualizar</a>
-                <a href="eliminar.php" target="_blank">Eliminar</a>
+                <a href="actualizar.php?Id=<?php echo $Estudiante['ID_ESTUDIANTE'] ?>" target="_blank">Actualizar</a>
+                <a href="eliminar.php?Id=<?php echo $Estudiante['ID_ESTUDIANTE'] ?>" target="_blank">Eliminar</a>
             </td>
         </tr>
 
