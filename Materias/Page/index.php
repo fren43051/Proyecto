@@ -30,10 +30,10 @@ $Modelo = new Materias();
         ?>
         <tr>
             <td><?php echo $Materia['ID_MATERIA'] ?></td>
-                <td><?php echo $Materia['MATERIA'] ?></td>
+            <td><?php echo $Materia['MATERIA'] ?></td>
             <td>
-                <a href="actualizar.php?Id=<?php echo $Materia['ID_MATERIA'] ?>" target="blank">Actualizar</a>
-                <a href="eliminar.php?Id=<?php echo $Materia['ID_MATERIA'] ?>" target="blank">Eliminar</a>
+                <a href="actualizar.php?Id=<?php echo $Materia['ID_MATERIA'] ?>" target="_blank">Actualizar</a>
+                <a href="eliminar.php?Id=<?php echo $Materia['ID_MATERIA'] ?>" target="_blank">Eliminar</a>
             </td>
         </tr>
         <?php
